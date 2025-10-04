@@ -2,6 +2,17 @@
 
 :root {
     --primary: #0d0d0d;
+
+    /* Frosted Glass Colors */
+    --frosted-glass-bg: rgba(92, 92, 92, 0.096);
+    --frosted-glass-border: rgba(134, 134, 134, 0.116);
+}
+
+.bg-frosted-glass {
+    background: var(--frosted-glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--frosted-glass-border);
 }
 
 @theme inline {

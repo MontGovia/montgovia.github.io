@@ -1,7 +1,8 @@
 "use client"
 
-import AnimatedGrid from "@/components/ui/AnimatedGrid";
-import GlowingBlob from "@/components/ui/GlowingBlob";
+import FrostedGlassNavbar from "@/components/navigation/FrostedGlassNavbar";
+import AnimatedGrid from "@/components/effects/AnimatedGrid";
+import GlowingBlob from "@/components/effects/GlowingBlob";
 import { useIsDesktop } from "@/hooks/DeviceDetector";
 
 export default function Home() {
@@ -10,8 +11,8 @@ export default function Home() {
         <div className="w-full min-h-screen">
 
             {/* Content */}
-            <main className="flex flex-col items-center text-white">
-                
+            <main className={`flex flex-col items-center text-white pt-5 ${isDesktop ? "px-20" : "px-5"}`}>
+                <FrostedGlassNavbar />
             </main>
 
             {/* Background Effects */}
