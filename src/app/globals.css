@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-    
+    --primary: #0d0d0d;
 }
 
 @theme inline {
-    
+    --color-primary: var(--primary);
 }

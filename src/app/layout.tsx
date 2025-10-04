@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "MontGovia",
         description: "Somos Montgovia, un dúo que combina distintas habilidades para crear soluciones y proyectos útiles para empresas e individuos.",
-        url: "https://montgovia.com",
+        url: "https://montgovia.online",
         siteName: "MontGovia",
         images: [
             {
@@ -31,20 +31,20 @@ export const metadata: Metadata = {
         locale: "es_ES",
         type: "website",
     },
-    };
+};
 
-    export default function RootLayout({
-        children,
-    }: Readonly<{
-        children: React.ReactNode;
-    }>) {
-        return (
-            <html lang="en">
-                <body
-                    className={`${roboto.variable} antialiased`}
-                >
-                    {children}
-                </body>
-            </html>
-        );
+export default function RootLayout({
+    children,
+}: Readonly<{
+    children: React.ReactNode;
+}>) {
+    return (
+        <html lang="en">
+            <body
+                className={`${roboto.variable} antialiased bg-primary`}
+            >
+                {children}
+            </body>
+        </html>
+    );
 }
