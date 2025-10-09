@@ -113,7 +113,7 @@ export default function HomeSineWaveBanner() {
     }, []);
 
     return (
-        <div className="relative w-full h-[60vh] max-h-96 overflow-hidden bg-frosted-glass mt-5">
+        <div className="relative w-full h-[60vh] max-h-96 overflow-hidden bg-frosted-glass mt-5 rounded-lg">
             <div className="relative flex flex-col items-center justify-center text-center h-[60vh] max-h-96 rounded-lg p-5">
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">Bienvenido MontGovia</h1>
                 <p className="text-lg md:text-2xl max-w-2xl">El dúo dinamico que trae tu idea, a la realidad.</p>
