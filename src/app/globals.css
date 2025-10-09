@@ -6,6 +6,10 @@
     /* Frosted Glass Colors */
     --frosted-glass-bg: rgba(92, 92, 92, 0.096);
     --frosted-glass-border: rgba(134, 134, 134, 0.116);
+
+    /* Opaque Glass Colors */
+    --opaque-glass-bg: rgba(255, 255, 255, 0.075);
+    --opaque-glass-border: rgba(255, 255, 255, 0.158);
 }
 
 .bg-frosted-glass {
@@ -13,6 +17,13 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--frosted-glass-border);
+}
+
+.bg-opaque-glass {
+    background: var(--opaque-glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--opaque-glass-border);
 }
 
 @theme inline {

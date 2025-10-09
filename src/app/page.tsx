@@ -1,8 +1,9 @@
 "use client"
 
-import FrostedGlassNavbar from "@/components/navigation/FrostedGlassNavbar";
+import FrostedGlassNavbar from "@/components/common/FrostedGlassNavbar";
 import AnimatedGrid from "@/components/effects/AnimatedGrid";
 import GlowingBlob from "@/components/effects/GlowingBlob";
+import HomeSineWaveBanner from "@/components/pages/home/HomeSineWaveBanner";
 import { useIsDesktop } from "@/hooks/DeviceDetector";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
             {/* Content */}
             <main className={`flex flex-col items-center text-white pt-5 ${isDesktop ? "px-20" : "px-5"}`}>
                 <FrostedGlassNavbar />
+                <HomeSineWaveBanner />
             </main>
 
             {/* Background Effects */}
