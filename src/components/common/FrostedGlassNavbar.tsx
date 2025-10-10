@@ -17,7 +17,7 @@ function MobileFrostedGlassNavbar() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className="items-center w-full bg-frosted-glass rounded-md px-4 py-3">
+        <nav className="fixed items-center w-full bg-frosted-glass rounded-md px-4 py-3 z-50">
             {/* NavContet Container */}
             <div className="flex w-full h-full justify-between">
                 {/* Left Side - Logo */}
@@ -63,9 +63,9 @@ function MobileFrostedGlassNavbar() {
 
 function DesktopFrostedGlassNavbar() {
     return (
-        <nav className="flex justify-between items-center w-full bg-frosted-glass rounded-md px-6 py-3">
+        <nav className="fixed flex justify-between items-center w-full bg-frosted-glass px-6 py-3 z-50">
             {/* Left Side - Logo */}
-            <div className="flex items-center space-x-3 bg-frosted-glass p-3 rounded-lg">
+            <div className="flex items-center space-x-3 bg-frosted-glass p-3">
                 <Image
                     src="/montgovia-complete.svg"
                     alt="MontGovia Logo"
