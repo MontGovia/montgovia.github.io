@@ -2,6 +2,7 @@
 
 :root {
     --primary: #0d0d0d;
+    --accent: #515151;
 
     /* Frosted Glass Colors */
     --frosted-glass-bg: rgba(92, 92, 92, 0.096);
@@ -14,18 +15,59 @@
 
 .bg-frosted-glass {
     background: var(--frosted-glass-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(10px);
+    --tw-backdrop-blur: blur(2px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     border: 1px solid var(--frosted-glass-border);
 }
 
 .bg-opaque-glass {
     background: var(--opaque-glass-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    --tw-backdrop-blur: blur(4px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     border: 1px solid var(--opaque-glass-border);
+}
+
+@property --tw-backdrop-blur {
+    syntax: "*";
+    inherits: false;
 }
 
 @theme inline {
     --color-primary: var(--primary);
+    --color-accent: var(--accent);
+}
+
+/* Hide Scrollbars &  Custom Selection */
+* {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+}
+
+::selection {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+::-moz-selection {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
