@@ -10,13 +10,12 @@ import { useIsDesktop } from "@/hooks/DeviceDetector";
 export default function Home() {
     const isDesktop = useIsDesktop(false);
     return (
-        <div className={`w-full min-h-screen text-white ${isDesktop ? "pb-5" : "pb-6"}`}>
+        <div className="w-full min-h-screen">
 
             {/* Content */}
-            <FrostedGlassNavbar />
-            <main className={`flex flex-col items-center ${isDesktop ? "px-15 pt-24" : "px-5 pt-21"}`}>
+            <main className={`flex flex-col items-center text-white pt-5 ${isDesktop ? "px-20" : "px-5"}`}>
+                <FrostedGlassNavbar />
                 <HomeSineWaveBanner />
-                <HomeContent />
             </main>
 
             {/* Background Effects */}
