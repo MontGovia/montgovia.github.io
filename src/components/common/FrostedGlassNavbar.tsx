@@ -7,10 +7,10 @@ import { useState } from "react";
 
 const MenuItems = [
     { id: "home", href: "/", label: "Inicio" },
-    { id: "projects", href: "/proyects", label: "Proyectos" },
-    { id: "clients", href: "/clients", label: "Clientes" },
-    { id: "about", href: "/about", label: "Nosotros" },
-    { id: "contact", href: "/contact", label: "Contacto" },
+    { id: "projects", href: "#proyects", label: "Proyectos" },
+    { id: "clients", href: "#clients", label: "Clientes" },
+    { id: "about", href: "#about", label: "Nosotros" },
+    { id: "contact", href: "#contact", label: "Contacto" },
 ];
 
 function MobileFrostedGlassNavbar() {

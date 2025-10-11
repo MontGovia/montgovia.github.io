@@ -3,9 +3,9 @@
 import FrostedGlassNavbar from "@/components/common/FrostedGlassNavbar";
 import AnimatedGrid from "@/components/effects/AnimatedGrid";
 import GlowingBlob from "@/components/effects/GlowingBlob";
-import HomeSineWaveBanner from "@/components/pages/home/HomeSineWaveBanner";
+import HomeSineWaveBanner from "@/components/elements/HomeSineWaveBanner";
+import HomeContent from "@/components/elements/HomeContent";
 import { useIsDesktop } from "@/hooks/DeviceDetector";
-import HomeContent from "@/components/pages/home/HomeContent";
 
 export default function Home() {
     const isDesktop = useIsDesktop(false);
